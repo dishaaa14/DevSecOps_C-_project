@@ -64,7 +64,7 @@ jobs:
         steps:
           - uses: actions/checkout@master
           - name: RunSnyk to check for vulnerabilities
-            uses: synk/actions/dotnet@master
+            uses: snyk/actions/dotnet@master
             continue-on-error: true
             env:
                 SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
